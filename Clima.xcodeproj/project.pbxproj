@@ -13,8 +13,6 @@
 		5567144629E57645007EC273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5567144429E57645007EC273 /* Main.storyboard */; };
 		5567144829E57649007EC273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5567144729E57649007EC273 /* Assets.xcassets */; };
 		5567144B29E57649007EC273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5567144929E57649007EC273 /* LaunchScreen.storyboard */; };
-		5567145429E577E1007EC273 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5567145229E577E1007EC273 /* light_background.pdf */; };
-		5567145529E577E1007EC273 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5567145329E577E1007EC273 /* dark_background.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		5567144729E57649007EC273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5567144A29E57649007EC273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5567144C29E57649007EC273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5567145229E577E1007EC273 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
-		5567145329E577E1007EC273 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +58,29 @@
 			children = (
 				5567143E29E57645007EC273 /* AppDelegate.swift */,
 				5567144029E57645007EC273 /* SceneDelegate.swift */,
-				5567144229E57645007EC273 /* WeatherViewController.swift */,
-				5567144429E57645007EC273 /* Main.storyboard */,
+				5567145729E58522007EC273 /* View */,
+				5567145629E5850B007EC273 /* Controller */,
 				5567144729E57649007EC273 /* Assets.xcassets */,
 				5567144929E57649007EC273 /* LaunchScreen.storyboard */,
 				5567144C29E57649007EC273 /* Info.plist */,
-				5567145329E577E1007EC273 /* dark_background.pdf */,
-				5567145229E577E1007EC273 /* light_background.pdf */,
 			);
 			path = Clima;
+			sourceTree = "<group>";
+		};
+		5567145629E5850B007EC273 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5567144229E57645007EC273 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5567145729E58522007EC273 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5567144429E57645007EC273 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,11 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5567145529E577E1007EC273 /* dark_background.pdf in Resources */,
 				5567144B29E57649007EC273 /* LaunchScreen.storyboard in Resources */,
 				5567144829E57649007EC273 /* Assets.xcassets in Resources */,
 				5567144629E57645007EC273 /* Main.storyboard in Resources */,
-				5567145429E577E1007EC273 /* light_background.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +308,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -328,6 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
